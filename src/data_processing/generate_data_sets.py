@@ -21,6 +21,7 @@ def main():
     # Read CSV Data with no header
     logger.info('Reading data from {} ...'.format(constants.CLEAN_DATA_FILE))
     data = pd.read_csv(constants.CLEAN_DATA_FILE, header=0)
+    data.dropna(inplace=True)
     logger.info('Data read. Shape: {}'.format(data.shape))
 
     # Generating training and test sets (for demo purposes we only keep 100k random

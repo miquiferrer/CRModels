@@ -77,6 +77,7 @@ def main():
     loss, mae, mse = model.evaluate(X_test, y_test, verbose=2)
     logger.info('Testing set Mean Abs Error: {:5.2f}'.format(mae))
     logger.info('Testing set Mean Squared Error: {}'.format(mse))
+    logger.info('Testing set Root Mean Squared Error: {}'.format(np.sqrt(mse)))
 
     # Saving model
     tf.saved_model.save(model, constants.TF_MODEL_PATH)

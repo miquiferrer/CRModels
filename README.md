@@ -86,6 +86,8 @@ This will also perform a prediction using the following input:
 
 [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 0.0, 2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, 1.0, 2.0]
 
+**Note:** Notice that this model is only trained with 20 epochs. But in a real scenario, we should increase this number quite substantially. 20 epochs is chosen for this exercise only.
+
 In order to test the exported model, we will perform the same prediction but using the exported model (this will serve us to verify that the exported model is the same DNN trained model). We can query the model with the following command:
 
 ````bash
