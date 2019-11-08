@@ -1,4 +1,4 @@
-# CRModels
+# CRModels 
 
 This repository cointains the necessary files to build 3 different models for the completion rate
 prediction model and serve one of them via a REST API using Flask. The three models are implemened in 
@@ -11,7 +11,7 @@ As mentioned above, there are 3 different models with the purpose of tackling th
 In all cases the problem has been treated as a regression problem, where the predicted value is continuous (i.e. the 
 completion rate)
 
-* **Model 1:** Simple linea regression model using Scikit-learn
+	* **Model 1:** Simple linear regression model using Scikit-learn
 * **Model 2:** Random forest based on XGBoost
 * **Model 3:** "Deep" Neural Network implemented in Tensorflow
 
