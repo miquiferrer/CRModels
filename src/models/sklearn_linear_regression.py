@@ -14,10 +14,10 @@ logger = logging.getLogger()
 
 def main():
 
-    logger.info('ScikitLaern Linear Regression Model')
+    logger.info('ScikitLearn Linear Regression Model')
 
     # Read CSV Data with no header
-    logger.info('Loading training ans test data ...')
+    logger.info('Loading training and test data ...')
     X_train, X_test, y_train, y_test = load_training_test_datasets(constants.XTRAIN_FILE, constants.XTEST_FILE, constants.YTRAIN_FILE, constants.YTEST_FILE)
     print(X_train.shape)
 
